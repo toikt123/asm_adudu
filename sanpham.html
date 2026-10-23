@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm | Danh Mục Kiệt Tác Đồ Da & Phụ Kiện Cao Cấp - Maison ADUDU</title>
+    <!-- Google Fonts: Cinzel & Montserrat & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 1. TOP TICKER ANNOUNCEMENT -->
+    <div class="top-ticker">
+        <span>Giao hàng đặc biệt miễn phí toàn quốc &bull; Hộp quà tặng biểu tượng ADUDU &bull; Bảo hành quốc tế</span>
+        <a href="lienhe.html">Liên hệ cố vấn</a>
+    </div>
+
+    <!-- 2. SITE HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <!-- Left: Mobile Menu Drawer Toggle -->
+            <div class="header-left">
+                <button class="menu-toggle-btn" aria-label="Mở menu điều hướng">
+                    <i class="fa-solid fa-bars"></i>
+                    <span>Menu</span>
+                </button>
+            </div>
+
+            <!-- Center: Brand Logo ADUDU -->
+            <div class="header-brand">
+                <a href="index.html" class="brand-logo" title="Trở về Trang chủ ADUDU">ADUDU</a>
+                <span class="brand-sub">Maison Fondée en 1854</span>
+            </div>
+
+            <!-- Right: Đã loại bỏ theo yêu cầu người dùng -->
+            <div class="header-right"></div>
+        </div>
+
+        <!-- MAIN NAVIGATION MENU: ĐÚNG 5 MỤC DẪN ĐẾN CÁC TRANG RIÊNG -->
+        <nav class="header-navigation" aria-label="Menu điều hướng chính">
+            <div class="container">
+                <ul class="main-menu">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="sanpham.html" class="active">Sản Phẩm</a></li>
+                    <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="lienhe.html">Liên Hệ</a></li>
+                    <li><a href="dangnhap.html">Đăng Nhập</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MOBILE SIDE DRAWER -->
+    <div class="mobile-drawer-overlay">
+        <aside class="mobile-drawer">
+            <div class="mobile-drawer-header">
+                <span class="footer-logo" style="color: var(--lv-black);">ADUDU</span>
+                <button class="mobile-drawer-close" aria-label="Đóng menu" style="background:transparent; font-size: 1.5rem; cursor:pointer;">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <!-- MENU 5 MỤC DẪN ĐẾN CÁC TRANG RIÊNG -->
+            <ul class="mobile-drawer-menu">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="sanpham.html" class="active">Sản Phẩm</a></li>
+                <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                <li><a href="lienhe.html">Liên Hệ</a></li>
+                <li><a href="dangnhap.html">Đăng Nhập</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <main>
+        <!-- 3. PAGE HERO BANNER -->
+        <section style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/hero-banner-2.jpg') center/cover no-repeat; padding: 6rem 1.5rem; text-align: center; color: var(--lv-white);">
+            <div class="container">
+                <span style="font-size: 0.8rem; letter-spacing: 3px; font-weight: 600; text-transform: uppercase; color: var(--lv-gold); display: block; margin-bottom: 0.5rem;">Vũ Trụ Sáng Tạo ADUDU</span>
+                <h1 style="font-family: var(--font-heading); font-size: 2.8rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 1rem;">Kiệt Tác Đồ Da &amp; Phụ Kiện</h1>
+                <p style="font-size: 0.95rem; max-width: 700px; margin: 0 auto; color: rgba(255,255,255,0.9); line-height: 1.7;">Khám phá bộ sưu tập túi xách kinh điển, vali du lịch huyền thoại và các phụ kiện may đo thủ công tinh tế nhất của Maison ADUDU.</p>
+            </div>
+        </section>
+
+        <!-- 4. PRODUCTS SECTION (CÁC BOX GỒM: GIÁ TIỀN, TÊN SẢN PHẨM, MUA HÀNG, CHI TIẾT SẢN PHẨM) -->
+        <section class="products-section section-padding">
+            <div class="container">
+                <!-- Filters -->
+                <div class="product-filters">
+                    <button class="filter-btn active" data-filter="all">Tất Cả Sản Phẩm (12)</button>
+                    <button class="filter-btn" data-filter="bags">Túi Xách Nữ</button>
+                    <button class="filter-btn" data-filter="travel">Vali &amp; Balo</button>
+                    <button class="filter-btn" data-filter="accessories">Ví &amp; Phụ Kiện</button>
+                    <button class="filter-btn" data-filter="shoes">Giày &amp; Thắt Lưng</button>
+                </div>
+
+                <!-- Products Grid: 12 Products -->
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card" data-category="bags" data-id="product-1">
+                        <span class="product-badge">Biểu Tượng</span>
+                        <div class="product-image-box">
+                            <img src="images/product-1.jpg" alt="Túi Xách ADUDU Speedy Bandoulière 25">
+                            <span class="product-zoom-hint" title="Xem ảnh phóng to"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        </div>
+                        <div class="product-info-box">
+                            <span class="product-category-name">Túi Xách Nữ</span>
+                            <h3 class="product-title">
+                                <a href="chitiet.html?id=product-1">Túi Xách ADUDU Speedy Bandoulière 25</a>
+                            </h3>
+                            <div class="product-price">48.500.000₫</div>
+                            <div class="product-actions-group">
+                                <button class="btn-buy-product">
+                                    <i class="fa-solid fa-bag-shopping"></i> Mua Hàng
+                                </button>
+                                <a href="chitiet.html?id=product-1" class="btn-detail-product">
+                                    Chi Tiết Sản Phẩm <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card" data-category="bags" data-id="product-2">
+                        <span class="product-badge">Bán Chạy Nhất</span>
+                        <div class="product-image-box">
+                            <img src="images/product-2.jpg" alt="Túi ADUDU Neverfull MM Monogram">
+                            <span class="product-zoom-hint" title="Xem ảnh phóng to"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        </div>
+                        <div class="product-info-box">
+                            <span class="product-category-name">Túi Xách Tote</span>
+                            <h3 class="product-title">
+                                <a href="chitiet.html?id=product-2">Túi ADUDU Neverfull MM Monogram</a>
+                            </h3>
+                            <div class="product-price">52.000.000₫</div>
+                            <div class="product-actions-group">
+                                <button class="btn-buy-product">
+                                    <i class="fa-solid fa-bag-shopping"></i> Mua Hàng
+                                </button>
+                                <a href="chitiet.html?id=product-2" class="btn-detail-product">
+                                    Chi Tiết Sản Phẩm <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card" data-category="bags" data-id="product-3">
+                        <span class="product-badge">Haute Couture</span>
+                        <div class="product-image-box">
+                            <img src="images/product-3.jpg" alt="Túi Xách ADUDU Capucines BB Taurillon">
+                            <span class="product-zoom-hint" title="Xem ảnh phóng to"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        </div>
+                        <div class="product-info-box">
+                            <span class="product-category-name">Túi Da Thượng Hạng</span>
+                            <h3 class="product-title">
+                                <a href="chitiet.html?id=product-3">Túi Xách ADUDU Capucines BB Taurillon</a>
+                            </h3>
+                            <div class="product-price">158.000.000₫</div>
+                            <div class="product-actions-group">
+                                <button class="btn-buy-product">
+                                    <i class="fa-solid fa-bag-shopping"></i> Mua Hàng
+                                </button>
+                                <a href="chitiet.html?id=product-3" class="btn-detail-product">
+                                    Chi Tiết Sản Phẩm <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card" data-category="travel" data-id="product-4">
+                        <span class="product-badge">Travel Icon</span>
+                        <div class="product-image-box">
+                            <img src="images/product-4.jpg" alt="Vali Du Lịch ADUDU Horizon 55 Monogram">
+                            <span class="product-zoom-hint" title="Xem ảnh phóng to"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        </div>
+                        <div class="product-info-box">
+                            <span class="product-category-name">Hành Lý Cao Cấp</span>
+                            <h3 class="product-title">
+                                <a href="chitiet.html?id=product-4">Vali Du Lịch ADUDU Horizon 55 Monogram</a>
+                            </h3>
+                            <div class="product-price">96.000.000₫</div>
+                            <div class="product-actions-group">
+                                <button class="btn-buy-product">
+                                    <i class="fa-solid fa-bag-shopping"></i> Mua Hàng
+                                </button>
+                                <a href="chitiet.html?id=product-4" class="btn-detail-product">
+                                    Chi Tiết Sản Phẩm <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card" data-category="travel" data-id="product-5">
+                        <span class="product-badge">Balo Quý Ông</span>
+                        <div class="product-image-box">
+                            <img src="images/product-5.jpg" alt="Balo Nam ADUDU Christopher MM Macassar">
+                            <span class="product-zoom-hint" title="Xem ảnh phóng to"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        </div>
+                        <div class="product-info-box">
+                            <span class="product-category-name">Balo &amp; Hành Lý Nam</span>
+                            <h3 class="product-title">
+                                <a href="chitiet.html?id=product-5">Balo Nam ADUDU Christopher MM Macassar</a>
+                            </h3>
+                            <div class="product-price">85.000.000₫</div>
+                            <div class="product-actions-group">
+                                <button class="btn-buy-product">
+                                    <i class="fa-solid fa-bag-shopping"></i> Mua Hàng
+                                </button>
+                                <a href="chitiet.html?id=product-5" class="btn-detail-product">
+                                    Chi Tiết Sản Phẩm <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card" data-category="shoes" data-id="product-6">
+                        <span class="product-badge">Mới Ra Mắt</span>
+                        <div class="product-image-box">
+                            <img src="images/product-6.jpg" alt="Giày Sneaker ADUDU Trainer Calf Leather">
+                            <span class="product-zoom-hint" title="Xem ảnh phóng to"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        </div>
+                        <div class="product-info-box">
+                            <span class="product-category-name">Giày Thể Thao Da Bê</span>
+                            <h3 class="product-title">
+                                <a href="chitiet.html?id=product-6">Giày Sneaker ADUDU Trainer Calf Leather</a>
+                            </h3>
+                            <div class="product-price">33.500.000₫</div>
+                            <div class="product-actions-group">
+                                <button class="btn-buy-product">
+                                    <i class="fa-solid fa-bag-shopping"></i> Mua Hàng
+                                </button>
+                                <a href="chitiet.html?id=product-6" class="btn-detail-product">
+                                    Chi Tiết Sản Phẩm <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card" data-category="accessories" data-id="product-7">
+                        <span class="product-badge">Phụ Kiện Sang</span>
+                        <div class="product-image-box">
+                            <img src="images/product-7.jpg" alt="Ví Dài ADUDU Zippy Wallet Monogram">
+                            <span class="product-zoom-hint" title="Xem ảnh phóng to"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        </div>
+                        <div class="product-info-box">
+                            <span class="product-category-name">Ví Cầm Tay</span>
+                            <h3 class="product-title">
+                                <a href="chitiet.html?id=product-7">Ví Dài ADUDU Zippy Wallet Monogram</a>
+                            </h3>
+                            <div class="product-price">24.500.000₫</div>
+                            <div class="product-actions-group">
+                                <button class="btn-buy-product">
+                                    <i class="fa-solid fa-bag-shopping"></i> Mua Hàng
+                                </button>
+                                <a href="chitiet.html?id=product-7" class="btn-detail-product">
+                                    Chi Tiết Sản Phẩm <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card" data-category="shoes" data-id="product-8">
+                        <span class="product-badge">Kinh Điển</span>
+                        <div class="product-image-box">
+                            <img src="images/product-8.jpg" alt="Dây Thắt Lưng ADUDU Initiales 40mm">
+                            <span class="product-zoom-hint" title="Xem ảnh phóng to"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        </div>
+                        <div class="product-info-box">
+                            <span class="product-category-name">Thắt Lưng Hai Mặt</span>
+                            <h3 class="product-title">
+                                <a href="chitiet.html?id=product-8">Dây Thắt Lưng ADUDU Initiales 40mm</a>
+                            </h3>
+                            <div class="product-price">18.500.000₫</div>
+                            <div class="product-actions-group">
+                                <button class="btn-buy-product">
+                                    <i class="fa-solid fa-bag-shopping"></i> Mua Hàng
+                                </button>
+                                <a href="chitiet.html?id=product-8" class="btn-detail-product">
+                                    Chi Tiết Sản Phẩm <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 9 -->
+                    <div class="product-card" data-category="accessories" data-id="product-9">
+                        <span class="product-badge">Hương Thơm</span>
+                        <div class="product-image-box">
+                            <img src="images/product-9.jpg" alt="Nước Hoa ADUDU Cœur Battant 100ml">
+                            <span class="product-zoom-hint" title="Xem ảnh phóng to"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        </div>
+                        <div class="product-info-box">
+                            <span class="product-category-name">Nước Hoa Cao Cấp</span>
+                            <h3 class="product-title">
+                                <a href="chitiet.html?id=product-1">Nước Hoa ADUDU Cœur Battant 100ml</a>
+                            </h3>
+                            <div class="product-price">8.900.000₫</div>
+                            <div class="product-actions-group">
+                                <button class="btn-buy-product">
+                                    <i class="fa-solid fa-bag-shopping"></i> Mua Hàng
+                                </button>
+                                <a href="chitiet.html?id=product-1" class="btn-detail-product">
+                                    Chi Tiết Sản Phẩm <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 10 -->
+                    <div class="product-card" data-category="accessories" data-id="product-10">
+                        <span class="product-badge">Đồng Hồ VIP</span>
+                        <div class="product-image-box">
+                            <img src="images/product-10.jpg" alt="Đồng Hồ ADUDU Tambour Horizon Light Up">
+                            <span class="product-zoom-hint" title="Xem ảnh phóng to"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        </div>
+                        <div class="product-info-box">
+                            <span class="product-category-name">Đồng Hồ Xa Xỉ</span>
+                            <h3 class="product-title">
+                                <a href="chitiet.html?id=product-1">Đồng Hồ ADUDU Tambour Horizon Light Up</a>
+                            </h3>
+                            <div class="product-price">92.000.000₫</div>
+                            <div class="product-actions-group">
+                                <button class="btn-buy-product">
+                                    <i class="fa-solid fa-bag-shopping"></i> Mua Hàng
+                                </button>
+                                <a href="chitiet.html?id=product-1" class="btn-detail-product">
+                                    Chi Tiết Sản Phẩm <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 11 -->
+                    <div class="product-card" data-category="bags" data-id="product-11">
+                        <span class="product-badge">Xu Hướng Mới</span>
+                        <div class="product-image-box">
+                            <img src="images/product-11.jpg" alt="Túi Xách ADUDU Coussin PM Lambskin">
+                            <span class="product-zoom-hint" title="Xem ảnh phóng to"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        </div>
+                        <div class="product-info-box">
+                            <span class="product-category-name">Túi Da Cừu Phồng</span>
+                            <h3 class="product-title">
+                                <a href="chitiet.html?id=product-3">Túi Xách ADUDU Coussin PM Lambskin</a>
+                            </h3>
+                            <div class="product-price">115.000.000₫</div>
+                            <div class="product-actions-group">
+                                <button class="btn-buy-product">
+                                    <i class="fa-solid fa-bag-shopping"></i> Mua Hàng
+                                </button>
+                                <a href="chitiet.html?id=product-3" class="btn-detail-product">
+                                    Chi Tiết Sản Phẩm <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 12 -->
+                    <div class="product-card" data-category="travel" data-id="product-12">
+                        <span class="product-badge">Du Lịch Xa Hoa</span>
+                        <div class="product-image-box">
+                            <img src="images/product-12.jpg" alt="Túi Trống ADUDU Keepall Bandoulière 50">
+                            <span class="product-zoom-hint" title="Xem ảnh phóng to"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        </div>
+                        <div class="product-info-box">
+                            <span class="product-category-name">Túi Trống Du Lịch</span>
+                            <h3 class="product-title">
+                                <a href="chitiet.html?id=product-4">Túi Trống ADUDU Keepall Bandoulière 50</a>
+                            </h3>
+                            <div class="product-price">68.500.000₫</div>
+                            <div class="product-actions-group">
+                                <button class="btn-buy-product">
+                                    <i class="fa-solid fa-bag-shopping"></i> Mua Hàng
+                                </button>
+                                <a href="chitiet.html?id=product-4" class="btn-detail-product">
+                                    Chi Tiết Sản Phẩm <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 5. FOOTER (VỚI CHỈ LOGO FACEBOOK, INSTAGRAM, TWITTER Ở CUỐI) -->
+    <footer class="site-footer">
+        <div class="container">
+            <!-- FOOTER: THÔNG TIN CỬA HÀNG (TRÁI) & BẢN ĐỒ MAP (PHẢI) -->
+            <div class="footer-top-simple">
+                <!-- Left: Địa chỉ, Email, Số điện thoại, Giờ mở cửa -->
+                <div class="footer-info-col">
+                    <h5 class="footer-info-title">THÔNG TIN LIÊN HỆ ADUDU</h5>
+                    <div class="footer-info-list">
+                        <div class="footer-info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span><strong>Địa chỉ:</strong> 24 Tràng Tiền, Hoàn Kiếm, Hà Nội</span>
+                        </div>
+                        <div class="footer-info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span><strong>Email:</strong> hotro@adudu.vn</span>
+                        </div>
+                        <div class="footer-info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <span><strong>Số điện thoại:</strong> 1800 6868 &bull; 0901 234 567</span>
+                        </div>
+                        <div class="footer-info-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <span><strong>Giờ mở cửa:</strong> 09:00 - 21:30 (Thứ 2 - Chủ Nhật)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Bản đồ Map kế bên -->
+                <div class="footer-map-col">
+                    <div class="footer-map-wrapper">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.113264426549!2d105.8524451759695!3d21.02815418779958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abec2bb9e729%3A0x6b306a445d070529!2zVHLDoG5nIFRp4buBbiBQbGF6YQ!5e0!3m2!1svi!2s!4v1700000000000!5m2!1svi!2s" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Bản đồ vị trí cửa hàng ADUDU">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER BOTTOM: CHỈ ĐỂ LOGO FACEBOOK, INSTAGRAM, TWITTER Ở CUỐI FOOTER -->
+            <div class="footer-bottom">
+                <div class="footer-brand-copy">
+                    <span class="footer-logo">ADUDU</span>
+                    <span class="footer-copyright">&copy; 2026 ADUDU FASHION. TOÀN BỘ BẢN QUYỀN ĐƯỢC BẢO LƯU.</span>
+                </div>
+
+                <!-- SOCIAL LOGOS ONLY -->
+                <div class="footer-social-logos">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Theo dõi ADUDU trên Facebook" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Theo dõi ADUDU trên Instagram" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Theo dõi ADUDU trên Twitter" aria-label="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CART SLIDE-OVER DRAWER -->
+    <div class="cart-drawer-overlay">
+        <aside class="cart-drawer">
+            <div class="cart-header">
+                <h3>Túi Mua Sắm Của Quý Khách</h3>
+                <button class="cart-close-btn" aria-label="Đóng giỏ hàng"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="cart-body">
+                <div class="cart-items-list">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total-row">
+                    <span class="cart-total-label">Tổng Cộng (Đã Gồm VAT):</span>
+                    <span class="cart-total-amount">48.500.000₫</span>
+                </div>
+                <button class="btn-checkout">
+                    Tiến Hành Thanh Toán An Toàn <i class="fa-solid fa-lock"></i>
+                </button>
+            </div>
+        </aside>
+    </div>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <img src="" alt="Hình ảnh sản phẩm ADUDU phóng to">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
