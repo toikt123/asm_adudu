@@ -1718,7 +1718,15 @@ button, input, select, textarea {
 
 @media (max-width: 992px) {
     .header-navigation {
-        display: none; /* Controlled by mobile drawer on smaller screens */
+        display: block;
+        padding: 0.6rem 0;
+    }
+    .main-menu {
+        gap: 1.25rem;
+        flex-wrap: wrap;
+    }
+    .main-menu li a {
+        font-size: 0.75rem;
     }
     .campaign-grid {
         grid-template-columns: 1fr;

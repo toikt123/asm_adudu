@@ -374,7 +374,7 @@
     font-size: 1rem;
 }
 
-/* Accordion Details */
+/* Accordion Details (Pure HTML5 Details/Summary - No JS Needed) */
 .accordion-wrapper {
     border-top: 1px solid var(--lv-gray-light);
 }
@@ -397,29 +397,30 @@
     text-transform: uppercase;
     color: var(--lv-black);
     text-align: left;
+    list-style: none;
 }
 
-.accordion-trigger i {
+.accordion-trigger::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-trigger::after {
+    content: '\f078';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
     font-size: 0.85rem;
     transition: transform 0.3s ease;
 }
 
-.accordion-item.open .accordion-trigger i {
+details[open] .accordion-trigger::after {
     transform: rotate(180deg);
 }
 
 .accordion-panel {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    padding-bottom: 1.5rem;
     font-size: 0.85rem;
     color: var(--lv-gray-medium);
     line-height: 1.8;
-}
-
-.accordion-item.open .accordion-panel {
-    max-height: 500px;
-    padding-bottom: 1.5rem;
 }
 
 /* SPECIFICATION TABLE (BẢNG THÔNG SỐ TỐI GIẢN) */

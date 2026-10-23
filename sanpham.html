@@ -26,18 +26,13 @@
     <!-- 2. SITE HEADER -->
     <header class="site-header">
         <div class="container header-inner">
-            <!-- Left: Mobile Menu Drawer Toggle -->
-            <div class="header-left">
-                <button class="menu-toggle-btn" aria-label="Mở menu điều hướng">
-                    <i class="fa-solid fa-bars"></i>
-                    <span>Menu</span>
-                </button>
-            </div>
+            <!-- Left: Empty for layout balance -->
+            <div class="header-left"></div>
 
             <!-- Center: Brand Logo ADUDU -->
             <div class="header-brand">
                 <a href="index.html" class="brand-logo" title="Trở về Trang chủ ADUDU">ADUDU</a>
-                <span class="brand-sub">Maison Fondée en 1854</span>
+                <span class="brand-sub">Thời Trang Cao Cấp</span>
             </div>
 
             <!-- Right: Đã loại bỏ theo yêu cầu người dùng -->
@@ -57,26 +52,6 @@
             </div>
         </nav>
     </header>
-
-    <!-- MOBILE SIDE DRAWER -->
-    <div class="mobile-drawer-overlay">
-        <aside class="mobile-drawer">
-            <div class="mobile-drawer-header">
-                <span class="footer-logo" style="color: var(--lv-black);">ADUDU</span>
-                <button class="mobile-drawer-close" aria-label="Đóng menu" style="background:transparent; font-size: 1.5rem; cursor:pointer;">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <!-- MENU 5 MỤC DẪN ĐẾN CÁC TRANG RIÊNG -->
-            <ul class="mobile-drawer-menu">
-                <li><a href="index.html">Trang Chủ</a></li>
-                <li><a href="sanpham.html" class="active">Sản Phẩm</a></li>
-                <li><a href="gioithieu.html">Giới Thiệu</a></li>
-                <li><a href="lienhe.html">Liên Hệ</a></li>
-                <li><a href="dangnhap.html">Đăng Nhập</a></li>
-            </ul>
-        </aside>
-    </div>
 
     <main>
         <!-- 3. PAGE HERO BANNER -->
@@ -461,42 +436,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- CART SLIDE-OVER DRAWER -->
-    <div class="cart-drawer-overlay">
-        <aside class="cart-drawer">
-            <div class="cart-header">
-                <h3>Túi Mua Sắm Của Quý Khách</h3>
-                <button class="cart-close-btn" aria-label="Đóng giỏ hàng"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="cart-body">
-                <div class="cart-items-list">
-                    <!-- Populated by JavaScript -->
-                </div>
-            </div>
-            <div class="cart-footer">
-                <div class="cart-total-row">
-                    <span class="cart-total-label">Tổng Cộng (Đã Gồm VAT):</span>
-                    <span class="cart-total-amount">48.500.000₫</span>
-                </div>
-                <button class="btn-checkout">
-                    Tiến Hành Thanh Toán An Toàn <i class="fa-solid fa-lock"></i>
-                </button>
-            </div>
-        </aside>
-    </div>
-
-    <!-- LIGHTBOX MODAL -->
-    <div class="lightbox-modal">
-        <span class="lightbox-close">&times;</span>
-        <div class="lightbox-content">
-            <img src="" alt="Hình ảnh sản phẩm ADUDU phóng to">
-            <div class="lightbox-caption"></div>
-        </div>
-    </div>
-
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
 </body>
 
 </html>
